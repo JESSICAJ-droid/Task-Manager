@@ -1,0 +1,179 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #20283b;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  width: min(680px, 92%);
+  margin: 55px auto;
+}
+
+.eyebrow {
+  color: #6654d9;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 46px;
+}
+
+h1 span {
+  color: #6654d9;
+}
+
+.subtitle {
+  color: #727b90;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.summary div {
+  padding: 20px;
+  background: white;
+  border-radius: 14px;
+}
+
+.summary span,
+.summary strong {
+  display: block;
+}
+
+.summary span {
+  color: #727b90;
+  font-size: 13px;
+}
+
+.summary strong {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #dce0ea;
+  border-radius: 10px;
+}
+
+.task-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #6654d9;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0 14px;
+}
+
+.filters button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  color: #727b90;
+}
+
+.filters .selected {
+  background: #e6e1ff;
+  color: #4d3db5;
+}
+
+.task-list {
+  display: grid;
+  gap: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 17px;
+  background: white;
+  border-radius: 12px;
+}
+
+.task-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-wrap: anywhere;
+}
+
+.done {
+  color: #8990a1;
+  text-decoration: line-through;
+}
+
+.delete {
+  border: none;
+  background: transparent;
+  color: #d34d62;
+}
+
+.empty,
+footer {
+  color: #727b90;
+  text-align: center;
+}
+
+.empty {
+  padding: 30px;
+}
+
+.error {
+  color: #d03445;
+}
+
+footer {
+  margin-top: 35px;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .summary div {
+    padding: 12px;
+  }
+
+  .summary strong {
+    font-size: 22px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+}
